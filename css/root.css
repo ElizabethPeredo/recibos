@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* =================
+*VARIABLES*
+=================*/
+:root {
+
+/* =================
+*PRINCIPAL COLORS*
+=================*/
+  --white: #fff;
+  --black: #000000;
+  --gray: rgb(150, 147, 147);
+  --light-gray: rgb(235, 230, 230);
+
+/* =================
+* BORDER *
+=================*/
+  --border-container: 0.1em solid var(--black);
+  --border-radius: 1em;
+  --border-radius-no-top: 0em 0em 0.5em 0.5em;
+  --border-radius-no-bottom: 0.5em 0.5em 0em 0em;
+  --box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+
+/* =================
+* FONTS *
+=================*/
+  --font-title: "Glory", cursive;
+  --font-subtitle: "Glory", cursive;
+  --font-body: "Poppins", sans-serif;
+  --font-banner: "Josefin Sans", cursive;
+  --font-logo: "Glory", cursive;
+  --font-code:'Fira Code', monospace;
+  --font-size: 1.2rem;
+
+/* =================
+* SIZE *
+=================*/
+  --width: 1200px;
+  --line-heigh: 1.75rem;
+  --heigh-banner: 20rem;
+
+/* =================
+* COLOR *
+=================*/
+  --color1: var(--red);
+  --color2: var(--gray);
+  --color11: white;
+  --color22: white;
+  --color-nav: var(--black);
+  /* *BACKGROUND* */
+  --bg-navbar: #ffffff;
+  --bg-header: #1b1b20;
+  --bg-footer: #1b1b20;
+}
+
+
+/* =================
+*SETTINGS*
+=================*/
+@import "root.css";
+@import "grid.css";
+@import "container.css";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+* {
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+/* =================
+*GENERAL STYLES*
+=================*/
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 100%;
+  line-height: var(--line-heigh);
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  counter-reset: h1;
+}
+
+pre::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+pre::-webkit-scrollbar,
+table::-webkit-scrollbar {
+  height: 0.8rem;
+}
+
+pre::-webkit-scrollbar-track,
+table::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: var(--color2);
+}
+
+pre::-webkit-scrollbar-thumb,
+table::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: var(--color1);
+}
+
+.container{
+    display: flex;
+}
+
+button,
+.printbutton{
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}

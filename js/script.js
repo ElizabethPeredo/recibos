@@ -33,3 +33,6 @@ function Export2Doc(element, filename = ''){
     
     document.body.removeChild(downloadLink);
 }
+function printArea() {
+    window.print();
+}

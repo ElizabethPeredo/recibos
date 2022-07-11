@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/recibos.css">
+    
     <title>Recibos</title>
 </head>
 
 <body>
     <section class="recibo__datos">
+        
         <h2>FECHAS DE RECIBOS (Seleccione uno) </h2>
         <form action="">
             <div>
@@ -90,7 +92,9 @@
                     <option value="2024">2024</option>
                 </select>
             </div>
-            
+            <div className="btn-print">
+                <input type="button" value="Imprimir" class="printbutton">  
+            </div>
         </form>
     </section>
     <section class="a4">
@@ -227,6 +231,13 @@
         </table>
     </section>
 
+    <script>
+        document.querySelectorAll('.printbutton').forEach(function(element) {
+            element.addEventListener('click', function() {
+                print();
+            });
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
     <script src="./js/fecha.js"></script>
 </body>

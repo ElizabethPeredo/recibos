@@ -31,6 +31,41 @@
   font-size: 0.5cm;
   margin: 0;
 }
+
+.printbutton {
+  appearance: button;
+  background-color: #252525;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  margin: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 1rem;
+  min-height: 3rem;
+}
+
+.printbutton:main,
+.printbutton:focus {
+  user-select: auto;
+}
+
+.printbutton:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.printbutton:disabled {
+  cursor: auto;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   font-size: 100%;

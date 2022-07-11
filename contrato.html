@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <title>Contrato Justino/title>
+</head>
+
+<body>
+    <section class="col-6 col-s-12 menu">
+        <button onclick="Export2Doc('exportContent');">Export as .doc</button>
+        <button onclick="Export2Doc('exportContent', 'word-content');">
+            Export as .doc
+        </button>
+        <form>
+            <fieldset>
+                <legend>Arrendador</legend>
+                <label><input type="button" value="Generar datos" onclick="datos()"/></label>
+                <label for="arrendador__dni"><span>DNI <span class="required">*</span></span>
+                    <input type="number" class="" id="arrendador__dni" />
+                </label>
+                <label for="arrendador__nombre"><span>Nombre <span class="required">*</span></span>
+                    <input type="text" class="" id="arrendador__nombre" />
+                </label>
+                <label for="arrendador__apellidos"><span>Apellidos <span class="required">*</span></span>
+                    <input type="text" class="" id="arrendador__apellidos" />
+                </label>
+                <label for="arrendador__dirección"><span>Direccion <span class="required">*</span></span>
+                    <input type="text" class="" id="arrendador__dirección" />
+                </label>
+                <label for="arrendador__distrito"><span>Distrito <span class="required">*</span></span>
+                    <input type="text" class="" id="arrendador__distrito" />
+                </label>
+                <label for="arrendador__provincia"><span>Provincia <span class="required">*</span></span>
+                    <input type="text" class="" id="arrendador__provincia" />
+                </label>
+                <label for="arrendador__departamento"><span>Depto <span class="required">*</span></span>
+                    <input type="text" class="" id="arrendador__departamento" />
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Arrendatario</legend>
+
+                <label for="arrendatario__dni"><span>DNI <span class="required">*</span></span>
+                    <input type="number" class="" id="arrendatario__dni" />
+                </label>
+                <label for="arrendatario__nombre"><span>Nombre <span class="required">*</span></span>
+                    <input type="text" class="" id="arrendatario__nombre" />
+                </label>
+                <label for="arrendatario__apellidos"><span>Apellidos <span class="required">*</span></span>
+                    <input type="text" class="" id="arrendatario__apellidos" />
+                </label>
+                <label for="arrendatario__dirección"><span>Direccion <span class="required">*</span></span>
+                    <input type="text" class="" id="arrendatario__dirección" />
+                </label>
+                <label for="arrendatario__distrito"><span>Distrito <span class="required">*</span></span>
+                    <input type="text" class="" id="arrendatario__distrito" />
+                </label>
+                <label for="arrendatario__provincia"><span>Provincia <span class="required">*</span></span>
+                    <input type="text" class="" id="arrendatario__provincia" />
+                </label>
+                <label for="arrendatario__departamento"><span>Depto <span class="required">*</span></span>
+                    <input type="text" class="" id="arrendatario__departamento" />
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Propiedad</legend>
+
+                <label for="propiedad__descripcion"><span>Descripción:</span>
+                    <input type="text" id="propiedad__descripcion" />
+                </label>
+                <label for="propiedad__ubicacion"><span>Ubicación: <span class="required">*</span> </span>
+                    <input type="text" id="propiedad__ubicacion" />
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Inmueble</legend>
+                <label for="propiedad__descripcion"><span>Descripción:<span
+                            class="required">*</span></span>
+                    <input type="text" id="propiedad__descripcion" />
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Contrato</legend>
+                <label class="fecha"><span>Fecha Inicio:</span>
+                    <input type="number" class="tel-number-field" name="dia" value="" placeholder="dia" />
+                    -
+                    <select id="mes__inicio" name="mes__inicio" class="">
+                        <option selected hidden>Mes</option>
+                        <option value="Enero">Enero</option>
+                        <option value="Febrero">Febrero</option>
+                        <option value="Marzo">Marzo</option>
+                        <option value="Abril">Abril</option>
+                        <option value="Mayo">Mayo</option>
+                        <option value="Junio">Junio</option>
+                        <option value="Julio">Julio</option>
+                        <option value="Agosto">Agosto</option>
+                        <option value="Septiembre">Septiembre</option>
+                        <option value="Octubre">Octubre</option>
+                        <option value="Noviembre">Noviembre</option>
+                        <option value="Diciembre">Diciembre</option>
+                    </select>
+                    -
+                    <select id="año__inicio" name="año__inicio" class="">
+                        <option selected hidden>Año</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2021</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </label>
+
+                <label class="fecha"><span>Fecha Fin:</span>
+                    <input type="number" class="tel-number-field" name="dia" value="" placeholder="dia" />
+                    -
+                    <select id="mes__fin" name="mes__fin" class="">
+                        <option selected hidden>Mes</option>
+                        <option value="Enero">Enero</option>
+                        <option value="Febrero">Febrero</option>
+                        <option value="Marzo">Marzo</option>
+                        <option value="Abril">Abril</option>
+                        <option value="Mayo">Mayo</option>
+                        <option value="Junio">Junio</option>
+                        <option value="Julio">Julio</option>
+                        <option value="Agosto">Agosto</option>
+                        <option value="Septiembre">Septiembre</option>
+                        <option value="Octubre">Octubre</option>
+                        <option value="Noviembre">Noviembre</option>
+                        <option value="Diciembre">Diciembre</option>
+                    </select>
+                    -
+                    <select id="año__fin" name="año__fin" class="">
+                        <option selected hidden>Año</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2021</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </label>
+                <label for="contrato__monto"><span>Monto de Alquiler: <span class="required">*</span></span>
+                    <input type="number" id="contrato__monto" />
+                    <label for="" id="contrato__monto__letras"></label>
+                </label>
+                <label for="contrato__garantia"><span>Monto de Garantia: <span class="required">*</span></span>
+                    <input type="number" id="contrato__garantia" />
+                    <label for="" id="contrato__garantia__letras"></label>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Firma de Contrato</legend>
+                <label class="fecha"><span>Firma de Contrato:</span>
+                    <input type="number" class="tel-number-field" name="dia" value="" placeholder="dia" />
+                    -
+                    <select id="mes__inicio" name="mes__inicio" class="">
+                        <option selected hidden>Mes</option>
+                        <option value="Enero">Enero</option>
+                        <option value="Febrero">Febrero</option>
+                        <option value="Marzo">Marzo</option>
+                        <option value="Abril">Abril</option>
+                        <option value="Mayo">Mayo</option>
+                        <option value="Junio">Junio</option>
+                        <option value="Julio">Julio</option>
+                        <option value="Agosto">Agosto</option>
+                        <option value="Septiembre">Septiembre</option>
+                        <option value="Octubre">Octubre</option>
+                        <option value="Noviembre">Noviembre</option>
+                        <option value="Diciembre">Diciembre</option>
+                    </select>
+                    -
+                    <select id="año__inicio" name="año__inicio" class="">
+                        <option selected hidden>Año</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2021</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </label>
+
+               
+                <label><input type="submit" value="Enviar" /></label>
+            </fieldset>
+        </form>
+    </section>
+
+    <section class="col-6 col-s-12">
+        <div id="exportContent">
+            <h1>Contrato de Arrendamiento</h1>
+            <p id="arrendador_dni"></p>
+            <p id="arrendador_nombre"></p>
+            <p id="arrendador_apellidos"></p>
+            <p id="arrendador_dirección"></p>
+            <p id="arrendador_distrito"></p>
+            <p id="arrendador_provincia"></p>
+            <p id="arrendador_departamento"></p>
+
+            <p id="arrendatario_dni"></p>
+            <p id="arrendatario_nombre"></p>
+            <p id="arrendatario_apellidos"></p>
+            <p id="arrendatario_dirección"></p>
+            <p id="arrendatario_distrito"></p>
+            <p id="arrendatario_provincia"></p>
+            <p id="arrendatario_departamento"></p>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="./js/datos_justino.js"></script>
+    <script src="./js/contrato.js"></script>
+    <script src="./js/numeros_letras.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

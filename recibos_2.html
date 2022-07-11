@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/recibos.css">
+    <title>Recibos</title>
+</head>
+
+
+<body class="theme-red">
+    <section class="recibo__datos">
+        <h2>FECHAS DE RECIBOS (Seleccione uno) </h2>
+        <form action="">
+            <div>
+                <label for=""><b>Mes 1: </b></label>
+                <select id="month1" name="month1" class="">
+                    <option selected hidden>Mes</option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                </select>
+                <select id="year1" name="year1" class="">
+                    <option selected hidden>Año</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2021</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+
+            <div>
+                <label for=""><b>Mes 2: </b></label>
+                <select id="month2" name="month2" class="">
+                    <option selected hidden>Mes</option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                </select>
+                <select id="year2" name="year2" class="">
+                    <option selected hidden>Año</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2021</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+
+            <div>
+                <label for=""><b>Mes 3: </b></label>
+                <select id="month3" name="month3" class="">
+                    <option selected hidden>Mes</option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                </select>
+                <select id="year3" name="year3" class="">
+                    <option selected hidden>Año</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2021</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+            
+        </form>
+    </section>
+    <section class="a4">
+        <table class="recibos">
+            <tbody>
+                <tr>
+                    <td>
+                        <section class="recibo__section1">
+                            <div class="recibo__img">
+                                <img src="./img/recibo.png" alt="">
+                            </div>
+                            <div>
+                                <p style="text-align:right"><b>RECIBO N° 00___</b></p>
+                                <br>
+                                <br>
+                                <p id="propietario"><b>YO:</b> JUSTINO C. PEREDO QUISPE</p>
+                                <p><b>RECIBI DE:</b> ____________________________________________________</p>
+                            </div>
+                        </section>
+                        <section class="recibo__section2">
+                            <p><b>LA SUMA DE:</b> S./______________.00 (______________________________________ SOLES)
+                            </p>
+                            <p><b>UBICADO:</b> URB. LOS LICENCIADOS DE LAS FUERZAS ARMADAS E-10</p>
+                            <p><b>POR CONCEPTO:</b> DE ALQUILER DE ______________________________________________</p>
+                            <div class="recibo__fecha">
+                                <p>CUSCO: _______ /</p>
+                                <p id="mes1"></p>
+                                <p id="año1"></p>
+                            </div>
+                            
+                            
+                            <!--Firmas-->
+                            <div class="recibo__firma">
+                                <b>&nbsp &nbsp &nbsp PROPIETARIO &nbsp &nbsp &nbsp</b>
+                                <b></b>
+                                <b>&nbsp &nbsp ARRENDATARIO &nbsp &nbsp</b>
+                            </div>
+                            <!--Fin Firmas-->
+                        </section>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <section class="recibo__section1">
+                            <div class="recibo__img">
+                                <img src="./img/recibo.png" alt="">
+                            </div>
+                            <div>
+                                <p style="text-align:right"><b>RECIBO N° 00___</b></p>
+                                <br>
+                                <br>
+                                <p><b>YO:</b> JUSTINO C. PEREDO QUISPE</p>
+                                <p><b>RECIBI DE:</b> ____________________________________________________</p>
+                            </div>
+                        </section>
+                        <section class="recibo__section2">
+                            <p><b>LA SUMA DE:</b> S./______________.00 (______________________________________ SOLES)
+                            </p>
+                            <p><b>UBICADO:</b> URB. LOS LICENCIADOS DE LAS FUERZAS ARMADAS E-10</p>
+                            <p><b>POR CONCEPTO:</b> DE ALQUILER DE ______________________________________________</p>
+                            <div class="recibo__fecha">
+                                <p>CUSCO: _______ /</p>
+                                <p id="mes2"></p>
+                                <p id="año2"></p>
+                            </div>
+                            
+                            
+                            <!--Firmas-->
+                            <div class="recibo__firma">
+                                <b>&nbsp &nbsp &nbsp PROPIETARIO &nbsp &nbsp &nbsp</b>
+                                <b></b>
+                                <b>&nbsp &nbsp ARRENDATARIO &nbsp &nbsp</b>
+                            </div>
+                            <!--Fin Firmas-->
+                        </section>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <section class="recibo__section1">
+                            <div class="recibo__img">
+                                <img src="./img/recibo.png" alt="">
+                            </div>
+                            <div>
+                                <p style="text-align:right"><b>RECIBO N° 00___</b></p>
+                                <br>
+                                <br>
+                                <p><b>YO:</b> JUSTINO C. PEREDO QUISPE</p>
+                                <p><b>RECIBI DE:</b> ____________________________________________________</p>
+                            </div>
+                        </section>
+                        <section class="recibo__section2">
+                            <p><b>LA SUMA DE:</b> S./______________.00 (______________________________________ SOLES)
+                            </p>
+                            <p><b>UBICADO:</b> URB. LOS LICENCIADOS DE LAS FUERZAS ARMADAS E-10</p>
+                            <p><b>POR CONCEPTO:</b> DE ALQUILER DE ______________________________________________</p>
+                            <div class="recibo__fecha">
+                                <p>CUSCO: _______ /</p>
+                                <p id="mes3"></p>
+                                <p id="año3"></p>
+                            </div>
+                            
+                            
+                            <!--Firmas-->
+                            <div class="recibo__firma">
+                                <b>&nbsp &nbsp &nbsp PROPIETARIO &nbsp &nbsp &nbsp</b>
+                                <b></b>
+                                <b>&nbsp &nbsp ARRENDATARIO &nbsp &nbsp</b>
+                            </div>
+                            <!--Fin Firmas-->
+                        </section>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+    <script src="./js/fecha.js"></script>
+</body>
+
+</html>

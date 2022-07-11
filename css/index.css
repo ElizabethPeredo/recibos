@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+    --color1: green;
+    --color2: rgb(184, 245, 184);
+    --color1-hover: #0ec24a;
+}
+.theme-blue{
+  --color1: #0067ee;
+  --color2: rgb(184, 196, 245);
+  --color1-hover: #3388f8;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+.menu button,
+.menu a,
+a:link,
+a:visited {
+  padding: 8px;
+  margin: 7px;
+  background-color: var(--color1);
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.menu button{
+    font-size: 1rem;
+    border: none;
+}
+.menu button:hover,
+.menu a:hover {
+  background-color: var(--color1-hover);
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.background-container {
+  position: relative;
+  background-color: black;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  animation: backgroundAnimation 9s linear infinite;
+}
+@keyframes backgroundAnimation {
+  0% {
+    background-image: url("https://images.unsplash.com/photo-1591568538533-bf1d0fb80e25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&h=1200&q=80");
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  35% {
+    background-image: url("https://images.unsplash.com/photo-1591568538533-bf1d0fb80e25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&h=1200&q=80");
+    opacity: 0;
+  }
+  37% {
+    background-image: url("https://images.unsplash.com/photo-1591562821999-119734a7ab3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&h=1200&q=80");
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  67% {
+    background-image: url("https://images.unsplash.com/photo-1591562821999-119734a7ab3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&h=1200&q=80");
+    opacity: 0;
+  }
+  69% {
+    background-image: url("https://images.unsplash.com/photo-1591562843644-f2b400149c8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&h=1200&q=80");
+    opacity: 1;
+  }
+  99% {
+    background-image: url("https://images.unsplash.com/photo-1591562843644-f2b400149c8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&h=1200&q=80");
+    opacity: 1;
+  }
+  100% {
+    background-image: url("https://images.unsplash.com/photo-1591562843644-f2b400149c8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&h=1200&q=80");
+    opacity: 0;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}

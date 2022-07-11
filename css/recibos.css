@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color1: green;
+  --color2: rgb(93, 240, 112);
+  --filter:contrast(100%);
+}
+.theme-blue{
+  --color1:#0067ee;
+  --color2: rgb(107, 172, 247);
+  --filter:hue-rotate(90deg);
+}
+.theme-red{
+  --color1:#ee0800;
+  --color2: rgb(247, 107, 107);
+  --filter:hue-rotate(220deg);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+* {
+  font-family: Calibri, sans-serif;
+  font-size: 0.5cm;
+  margin: 0;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+  background-color: white;
+  line-height: 0.65cm;
+}
+.recibo__datos {
+  margin: 1cm auto;
+  background: var(--color2);
+  padding: 0.5cm;
+  max-width: 21cm;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.recibo__datos form {
+  display: flex;
+  flex-direction: column;
+}
+.recibo__datos * {
+  font-family: "Rubik", sans-serif;
+  padding: 0.1cm;
+}
+.a4 {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  width: 21cm;
+  height: 29.7cm;
+}
+.recibos {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0.5cm;
+}
+
+.recibos tr td {
+  border: 0.1cm solid var(--color1);
+  padding: 0.3cm;
+  height: 8.8cm;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.recibos tr:nth-child(2) td,
+.recibos tr:nth-child(5) td {
+  background-color: white;
+  border: 0cm solid white;
+  border-bottom: 0.01cm solid black;
+  height: 0.5cm;
+  border-style: dotted;
+  padding: 0;
+  margin: 0;
+}
+.recibos tr:nth-child(3) td,
+.recibos tr:nth-child(6) td {
+  background-color: white;
+  border: 0cm solid white;
+  border-top: 0cm solid white;
+  height: 0.5cm;
+  padding: 0;
+  margin: 0;
+}
+
+.recibo__section1 {
+  display: flex;
+  gap: 0.5cm;
+}
+.recibo__section1 img {
+  width: 3cm;
+  filter: var(--filter);
+}
+.recibo__img {
+  display: flex;
+  align-items: center;
+}
+
+.recibo__fecha {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.recibo__firma {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.recibo__firma b {
+  margin-top: 1.5cm;
+  border-top: 0.01cm solid black;
+}
+@page {
+  margin: 0;
+  zoom: 1;
+}
+
+@media print {
+  html,
+  body {
+    background: white;
+    margin: 0;
+    padding: 0;
+    zoom: 100% !important;
+  }
+  .recibo__datos {
+    display: none;
+  }
+  .a4 {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  .recibos {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 850px) {
+  html {
+    zoom: 80%;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    zoom: 60%;
+  }
+}
+@media (max-width: 550px) {
+  html {
+    zoom: 55%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    zoom: 50%;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    zoom: 40%;
+  }
+}
+@media (max-width: 250px) {
+  html {
+    zoom: 30%;
+  }
+}
